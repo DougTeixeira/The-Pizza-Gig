@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"
+        integrity="sha512-jTgBq4+dMYh73dquskmUFEgMY5mptcbqSw2rmhOZZSJjZbD2wMt0H5nhqWtleVkyBEjmzid5nyERPSNBafG4GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+        integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css"
+        integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css"
+        integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+        integrity="sha512-XJ3ntWHl40opEiE+6dGhfK9NAKOCELrpjiBRQKtu6uJf9Pli8XY+Hikp7rlFzY4ElLSFtzjx9GGgHql7PLSeog=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <script defer async src='https://duz4dqsaqembt.cloudfront.net/client/whats.js'></script>
+    <title>The Pizza Gig</title>
+
+</head>
+
+<body>
+
+    <header class="header-content content">
+        <nav id="nav">
+            <button aria-label="Open Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+            <a href="#">
+                <img id='logo' src="assets/images/logo.png" alt="logo">
+            </a>
+            <div class="menu" role="menu">
+                <ul>
+                    <li class="li">
+                        <div class="header-menu">
+                            <a href="#" id="cardapio">
+                                <img src="assets/images/menu2.png" alt="Menu">
+                                <span>Menu</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="li-logo">
+                        <div class="header-logo">
+                            <a href="#" id="home">
+                                <img src="assets/images/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="li">
+                        <div class="header-reservation">
+                            <a href="#" id="contato">
+                                <img src="assets/images/menu3.png" alt="pedido">
+                                <span>Inquiry</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home_section">
+        <div class="slider">
+
+            <div class="slides">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img
+                        src="assets/images/varias.jpg" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/pizzas/PEPPERONI.jpg" />
+                </div>
+                <div class="slide">
+                    <img
+                        src="assets/images/pizzas/MARGHERITA.jpg" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/pizzas/HOT GIG.jpg" />
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+        </div>
+        <section>
+            <div class="summary-content content bg-pizza">
+                <div class="summary-img"><img src="assets/images/name.png" alt="The Pizza Gig"></div>
+                <h2 class="summary-h2">Você tá perdendo as coisas boas da vida, tipo… pizza!</h2>
+                <p class="summary-p">A pizza ou piza, como se escreve em Portugal, hoje tão disseminada no território
+                    brasileiro, é atualmente um elemento fundamental da gastronomia italiana, mas este saboroso prato
+                    não nasceu na Itália, como muitos imaginam. Esta iguaria é elaborada com massa fermentada de farinha
+                    de trigo, banhada com molho de tomates e revestida de produtos diversos, geralmente alguma espécie
+                    de queijo, carnes defumadas ou não, ervas e até legumes e doces, inclusive o próprio sorvete. Por
+                    último, um toque de orégano ou de manjericão, e finalmente tudo é conduzido ao forno. Mas nem sempre
+                    ela foi assim.
+                </p>
+                <p class="summary-p line-p">A história da pizza tem início há pelo menos seis mil anos atrás,
+                    provavelmente entre os egípcios e os hebreus. Ela não era, é claro, como é conhecida hoje, mas
+                    apenas um delgado estrato de massa – farinha mesclada com água -, chamado na época de ‘pão de
+                    Abrahão’, semelhante ao moderno pão sírio; era também conhecido como ‘piscea’, termo que futuramente
+                    derivaria para pizza. Outros estudiosos afirmam que ela era consumida pelos gregos, os quais
+                    produziam suas massas com farinha de trigo, arroz ou grão de bico, assando-as depois em tijolos
+                    ardentes.</p>
+            </div>
+
+            <div class="img-mass line-img">
+                <img src="assets/images/massa de pizza.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <div class="map-content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735.7700174576216!2d-0.0853403170968696!3d51.66303158676992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761f23898503a1%3A0x62606f6689d2748e!2sThe%20Pizza%20Gig!5e0!3m2!1spt-BR!2sbr!4v1665167739791!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </section>
+
+    <section id="contato_section">
+        <form id="form" action="https://formsubmit.co/dougteixeira@hotmail.com" method="POST">
+            <div class="grid-content">
+                <fieldset class="form-content">
+                    <legend class="contact-legend"></legend>
+
+                    <h1 class="h1-msg">Send your message</h1>
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="hidden" name="_template" value="table">
+
+                    <div class="form-group name">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="Name" required>
+                    </div>
+
+                    <div class="form-group telephone">
+                        <label for="telephone">Telephone</label>
+                        <input type="text" id="phone" class="phone" name="Telephone" required />
+
+                    </div>
+
+                    <div class="form-group email">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="Email" required>
+                    </div>
+
+                    <div class="form-group event">
+                        <label for="event">Event</label>
+                        <input id="event" type="checkbox" name="Event">
+                    </div>
+
+                    <div class="form-group date off">
+                        <label for="date">Date</label>
+                        <input id="date" type="date" name="Date">
+                    </div>
+
+                    <div class="form-group time off">
+                        <label for="time">Time</label>
+                        <input id="time" type="time" name="Time">
+                    </div>
+
+                    <div class="form-group from-message">
+                        <label for="message">message</label>
+                        <textarea type="text" name="Message" rows="5" id="message" required></textarea>
+                    </div>
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/pizzagig">
+
+                    <button id="submit-from" type="submit">Submit</button>
+
+                </fieldset>
+            </div>
+        </form>
+    </section>
+
+    <section id="cardapio_section">
+        <div class="header-cardapio">
+            <h1>Menu</h1>
+        </div>
+
+        <div class="information-cardapio">
+            <h3>Choose your pizza</h3>
+        </div>
+
+        <div class="cardapio-type">
+            <h3>House Pizzas</h3>
+        </div>
+
+        <div class="cardapio-content">
+            <div class="cardapio-grid">
+                <div class="product-group">
+                    <div class="product-img">
+                        <img src="assets/images/pizzas/MARGHERITA.jpg" alt="MARGHERITA ( V )">
+                    </div>
+
+                    <div class="product-details">
+                        <div class="title-button">
+                            <button value="MARGHERITA ( V )" class="botao_sabor">
+                                <p class="flavor-pizza">MARGHERITA ( V )</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <p class="details-pizza"></p>
+                    </div>
+                </div>
+                <div class="product-group">
+                    <div class="product-img">
+                        <img src="assets/images/pizzas/PEPPERONI.jpg" alt="PEPPERONI">
+                    </div>
+                    <div class="product-details">
+                        <div class="title-button">
+                            <button value="PEPPERONI" class="botao_sabor">
+                                <p class="flavor-pizza">PEPPERONI</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <p class="details-pizza"></p>
+                    </div>
+                </div>
+                <div class="product-group">
+                    <div class="product-img">
+                        <img src="assets/images/pizzas/VEGAN GIG.jpg" alt="CHEESE & VEGGIES">
+                    </div>
+                    <div class="product-details">
+                        <div class="title-button">
+                            <button value="CHEESE & VEGGIES" class="botao_sabor">
+                                <p class="flavor-pizza">CHEESE & VEGGIES</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <p class="details-pizza"></p>
+                    </div>
+                </div>
+                <div class="product-group">
+                    <div class="product-img">
+                        <img src="assets/images/pizzas/VEGAN GIG.jpg" alt="VEGAN GIG">
+                    </div>
+                    <div class="product-details">
+                        <div class="title-button">
+                            <button value="VEGAN GIG" class="botao_sabor">
+                                <p class="flavor-pizza">VEGAN GIG</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <p class="details-pizza"></p>
+                    </div>
+                </div>
+                <div class="product-group">
+                    <div class="product-img">
+                        <img src="assets/images/pizzas/HOT GIG.jpg" alt="HOT GIG (NDUJA/PEPPERONI)">
+                    </div>
+                    <div class="product-details">
+                        <div class="title-button">
+                            <button value="HOT GIG (NDUJA/PEPPERONI)" class="botao_sabor">
+                                <p class="flavor-pizza">HOT GIG (NDUJA/PEPPERONI)</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <p class="details-pizza"></p>
+                    </div>
+                </div>
+                <div class="product-group">
+                    <div class="product-img">
+                        <img src="assets/images/pizzas/" alt="PEPPE GIG">
+                    </div>
+                    <div class="product-details">
+                        <div class="title-button">
+                            <button value="PEPPE GIG" class="botao_sabor">
+                                <p class="flavor-pizza">PEPPE GIG</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <p class="details-pizza"></p>
+                    </div>
+                </div>
+                <div class="product-group">
+                    <div class="product-img">
+                        <img src="assets/images/pizzas/" alt="HAM & CHEESE">
+                    </div>
+                    <div class="product-details">
+                        <div class="title-button">
+                            <button value="HAM & CHEESE" class="botao_sabor">
+                                <p class="flavor-pizza">HAM & CHEESE</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <p class="details-pizza"></p>
+                    </div>
+                </div>
+                <div class="product-group">
+                    <div class="product-img">
+                        <img src="assets/images/pizzas/GARLIC BREAD.jpg" alt="GARLIC BREAD ( VEGAN )">
+                    </div>
+                    <div class="product-details">
+                        <div class="title-button">
+                            <button value="GARLIC BREAD ( VEGAN )" class="botao_sabor">
+                                <p class="flavor-pizza">GARLIC BREAD ( VEGAN )</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <p class="details-pizza"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content content">
+            <div class="footer-details">
+                <p>Doubts, complaints, suggestions and/or compliments send an email to:
+                    dougteixeira@hotmail.com.br</p>
+                <p class="copy">&copy; Douglas | +55 (85) 99103-1724</p>
+            </div>
+
+            <div class="footer-icons">
+                <h3>Contacts: </h3>
+                <div class="contact-icons">
+                    <a target="_blank" id="whatsapp" href='https://api.whatsapp.com/send?phone=447821200112'
+                        id="whatsapp-icon" alt="whatsapp">
+                        <img src='assets/images/whatsapp.png' alt="whatsapp">
+                    </a>
+                    <a id="instagram" target="_blank" href="https://www.instagram.com/thepizzagig/" alt="instagram">
+                        <img src=" assets/images/instagram.png" alt="instagram">
+                    </a>
+                    <a id="facebook" target="_blank" href="https://www.facebook.com/thepizzagiglondon" alt="facebook">
+                        <img src="assets/images/facebook.png" alt="facebook">
+                    </a>
+                    <a id="tiktok" target="_blank" href="https://www.tiktok.com/@thepizzagig" alt="tiktok">
+                        <img src="assets/images/tiktok.png" alt="tiktok">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    $("#phone").inputmask('(99) 99999-9999');
+    // $('#test').inputmask('(99) 9999[9]-9999');
+
+    $("#name").on("input", function (event) {
+        var inputValue = this.value;
+        this.value = this.value.replace(/[0-9]/g, "")
+    });
+
+    $('#event').click(function () {
+        $(".time").toggleClass('on');
+        $(".date").toggleClass('on');
+    })
+
+    $(document).ready(function () {
+        $("#cardapio_section").hide();
+        $("#contato_section").hide();
+    })
+
+    $('#home').click(function (event) {
+        $("#home_section").show();
+        $("#cardapio_section").hide();
+        $("#contato_section").hide();
+    })
+
+    $('#logo').click(function (event) {
+        $("#home_section").show();
+        $("#cardapio_section").hide();
+        $("#contato_section").hide();
+    })
+
+    $('#cardapio').click(function (event) {
+        $("#cardapio_section").show();
+        $("#home_section").hide();
+        $("#contato_section").hide();
+    })
+
+    $('#contato').click(function (event) {
+        $("#contato_section").show();
+        $("#cardapio_section").hide();
+        $("#home_section").hide();
+    })
+
+</script>
+
+</html>
